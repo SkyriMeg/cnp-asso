@@ -25,7 +25,7 @@ class Student
     #[ORM\Column]
     private ?int $phone = null;
 
-    #[ORM\Column]
+    #[ORM\Column(type: 'boolean', options: ['default' => false])]
     private ?bool $registration_file = null;
 
     public function getId(): ?int
