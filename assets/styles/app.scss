@@ -1,7 +1,4 @@
+@import "_variables.scss";
 @import '../../vendor/twbs/bootstrap/scss/bootstrap';
-
-$primary: red;
-
-body {
-    background-color: $primary;
-}
+@import "_global.scss";
+@import "_navbar.scss";
