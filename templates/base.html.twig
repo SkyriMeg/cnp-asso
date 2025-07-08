@@ -6,9 +6,11 @@
 			{% block title %}Cherbourg Natation Plongée
 			{% endblock %}
 		</title>
+		{{ encore_entry_link_tags('app') }}
 		<link rel="icon" href="{{ asset('images/cnp-logo.jpg') }}"> {% block stylesheets %}{% endblock %}
 
 		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
 			<script type="module">
 				import "./app.js";
 			</script>
